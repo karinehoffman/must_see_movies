@@ -39,6 +39,12 @@
           </div>
         </div>
       </div>
+       <ul>
+          <li>Filmography</li>
+          <% @director.movies.each do |movie| %>
+          <li><%= movie.title %></li>
+          <% end %>
+        </ul>
     </div>
   </div>
 </div>
